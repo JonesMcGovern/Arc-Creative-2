@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sales-driven web design for solo practitioners. We modernize the online presence of therapists, doctors, coaches, and consultants — with strategy, not just aesthetics.">
+  <title>Revive — Sales-Driven Web Design for Solo Practitioners</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Inter:wght@300;400;500&family=Work+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <div class="logo" aria-label="Arc Creative home">
+        <img class="logo-full" src="assets/arc-logo-full.png" alt="Arc Creative">
+        <img class="logo-short" src="assets/arc-logo-short.png" alt="Arc">
+      </div>
+      <button
+        class="nav-consult"
+        id="nav-consult"
+        type="button"
+      >
+        Book Consult
+      </button>
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu" hidden>
+        <ul class="nav-links">
+          <li><a href="#process">Process</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#who">Who We Help</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="section-stack" id="section-stack" hidden aria-hidden="true"></div>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <h1 class="hero-h1">
+        <span class="hero-headline hero-headline-desktop">
+          <span class="hero-line">Your Brand Is</span>
+          <span class="hero-line">Quietly&nbsp;Costing</span>
+          <span class="hero-line">You&nbsp;Money.</span>
+        </span>
+        <span class="hero-headline hero-headline-mobile">
+          <span class="hero-line">Your Brand</span>
+          <span class="hero-line">Is Quietly</span>
+          <span class="hero-line">Costing&nbsp;You</span>
+          <span class="hero-line">Money.</span>
+        </span>
+      </h1>
+      <p class="hero-sub">
+        You’ve spent years building real expertise and a strong reputation, but your website tells
+        a different story. An outdated site quietly costs you trust, referrals, and opportunities.
+        We help brands look as credible online as they are in real life.
+      </p>
+      <div class="hero-actions">
+        <form class="hero-lead-form" id="hero-lead-form">
+          <label class="hero-field hero-field-wide" aria-label="Project description">
+            <textarea name="project" rows="1" maxlength="50" placeholder="Tell us about your project" required></textarea>
+          </label>
+          <label class="hero-field hero-field-arrow" aria-label="Email">
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <button type="submit" class="hero-submit" id="meeting-toggle" aria-expanded="false" aria-controls="meeting-panel">
+              <span class="hero-toggle-arrow" aria-hidden="true"></span>
+            </button>
+          </label>
+        </form>
+      </div>
+      <div class="meeting-panel" id="meeting-panel" hidden>
+        <form class="meeting-form" id="meeting-form">
+          <label class="hero-field" aria-label="Preferred date">
+            <input type="date" name="meeting-date" required>
+          </label>
+          <label class="hero-field" aria-label="Preferred time">
+            <input type="time" name="meeting-time" required>
+          </label>
+          <button type="submit" class="btn-secondary meeting-submit">Request time</button>
+        </form>
+        <p class="meeting-confirmation" id="meeting-confirmation" hidden>
+          Thanks. Your meeting request is on its way.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="module-progress" id="module-progress" aria-hidden="true" hidden>
+    <div class="module-progress-track">
+      <div class="module-progress-fill" id="module-progress-fill"></div>
+      <div class="module-progress-ball" id="module-progress-ball"></div>
+    </div>
+  </div>
+
+  <section class="image-break image-break-zero" aria-hidden="true"></section>
+
+  <!-- ============================================================
+       PROCESS
+  ============================================================ -->
+  <section class="section" id="process">
+    <div class="section-inner">
+      <div class="process-layout module-layout">
+        <div class="process-visual module-visual" aria-hidden="true"></div>
+        <div class="process-content module-content">
+          <h2 class="section-h module-title"><em>The Problem</em></h2>
+          <p class="section-p module-copy">
+            The longer your website stays outdated, the more it costs you.
+            Most business owners are busy doing great work, not thinking about
+            their website. Meanwhile, an outdated online presence quietly turns
+            away the clients and opportunities they worked years to earn.
+          </p>
+          <div class="process-grid module-list">
+            <div class="process-step module-item">
+              <div class="step-n module-index">01</div>
+              <div class="process-step-copy module-item-copy">
+                <h4>Pain Point 01 — It Feels Dated</h4>
+                <p>First impressions happen instantly. If your site looks behind, prospects assume your business is too. Years of experience and trust can disappear in seconds.</p>
+              </div>
+            </div>
+            <div class="process-step module-item">
+              <div class="step-n module-index">02</div>
+              <div class="process-step-copy module-item-copy">
+                <h4>Pain Point 02 — You Are Losing Opportunities</h4>
+                <p>You never see the people who leave. The most qualified prospects are often already searching for what you offer — your website just failed to keep them there.</p>
+              </div>
+            </div>
+            <div class="process-step module-item">
+              <div class="step-n module-index">03</div>
+              <div class="process-step-copy module-item-copy">
+                <h4>Pain Point 03 — It Undersells Your Business</h4>
+                <p>When your online presence does not reflect the quality of your work, trust drops. Your reputation, results, and expertise deserve a website that communicates them clearly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="image-break image-break-one" aria-hidden="true"></section>
+
+  <!-- ============================================================
+       MODULE 2 EXAMPLE
+  ============================================================ -->
+  <section class="section section-flush" id="how-we-work">
+    <div class="section-inner">
+      <div class="module-layout">
+        <div class="module-visual" aria-hidden="true"></div>
+        <div class="module-content">
+          <h2 class="section-h module-title">How We Work</h2>
+          <p class="section-p">
+            You focus on your business. We handle the rest.
+            We built Arc for business owners who know their time is better spent
+            serving clients than managing a website. Every engagement starts with
+            a free audit so you can see how we think before committing.
+          </p>
+          <div class="module-two-list">
+            <div class="module-two-item">
+              <div class="module-two-index">01</div>
+              <div class="module-two-item-copy">
+                <h4>Free Audit</h4>
+                <p>We review your current website and brand presence, identify what is working, and show you where opportunities are being missed.</p>
+              </div>
+            </div>
+            <div class="module-two-item">
+              <div class="module-two-index">02</div>
+              <div class="module-two-item-copy">
+                <h4>Align On A Plan</h4>
+                <p>We scope the engagement around your goals. Some businesses need a refresh. Others need a full rebuild. We focus only on what matters.</p>
+              </div>
+            </div>
+            <div class="module-two-item">
+              <div class="module-two-index">03</div>
+              <div class="module-two-item-copy">
+                <h4>Build And Launch</h4>
+                <p>We handle strategy, design, copy, and development. You review, give feedback, and we move quickly from kickoff to launch.</p>
+              </div>
+            </div>
+            <div class="module-two-item">
+              <div class="module-two-index">04</div>
+              <div class="module-two-item-copy">
+                <h4>Ongoing Support</h4>
+                <p>Need a long-term partner? We offer maintenance, updates, and strategy support — or hand everything off cleanly when the project is complete.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="image-break image-break-two" aria-hidden="true"></section>
+
+  <!-- ============================================================
+       WHO WE SERVE
+  ============================================================ -->
+  <section class="section section-flush" id="who">
+    <div class="section-inner">
+      <div class="module-layout">
+        <div class="module-visual" aria-hidden="true"></div>
+        <div class="module-content">
+          <h2 class="section-h module-title">Who We Help</h2>
+          <p class="section-p module-copy">
+            Built for professionals with better things to do than manage a website.
+            We work with established businesses ready for an online presence that
+            reflects the quality of their work.
+          </p>
+          <div class="module-list">
+            <div class="module-item">
+              <div class="module-index">01</div>
+              <div class="module-item-copy">
+                <h4>Therapists And Counselors</h4>
+              </div>
+            </div>
+            <div class="module-item">
+              <div class="module-index">02</div>
+              <div class="module-item-copy">
+                <h4>Dental And Medical Practices</h4>
+              </div>
+            </div>
+            <div class="module-item">
+              <div class="module-index">03</div>
+              <div class="module-item-copy">
+                <h4>Fitness And Wellness Experts</h4>
+              </div>
+            </div>
+            <div class="module-item">
+              <div class="module-index">04</div>
+              <div class="module-item-copy">
+                <h4>Accountants And Advisors</h4>
+              </div>
+            </div>
+            <div class="module-item">
+              <div class="module-index">05</div>
+              <div class="module-item-copy">
+                <h4>Coaches And Consultants</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="image-break image-break-three" aria-hidden="true"></section>
+
+  <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+  <section class="section section-flush" id="services">
+    <div class="section-inner">
+      <div class="module-layout">
+        <div class="module-visual" aria-hidden="true"></div>
+        <div class="module-content">
+          <h2 class="section-h module-title">Services</h2>
+          <p class="section-p module-copy">
+            Start where you need to.
+            Every engagement begins with a free audit. From there, we recommend
+            the highest-impact next step for your business.
+          </p>
+          <div class="module-two-list module-two-list-three">
+            <div class="module-two-item">
+              <div class="module-two-index">01</div>
+              <div class="module-two-item-copy">
+                <h4>Brand Foundation</h4>
+                <p>Logo, identity, typography, and visual direction built to create a cohesive, credible brand presence.</p>
+              </div>
+            </div>
+            <div class="module-two-item">
+              <div class="module-two-index">02</div>
+              <div class="module-two-item-copy">
+                <h4>Website Modernization</h4>
+                <p>A fast, modern, mobile-optimized website that reflects the quality of your business and builds trust instantly.</p>
+              </div>
+            </div>
+            <div class="module-two-item">
+              <div class="module-two-index">03</div>
+              <div class="module-two-item-copy">
+                <h4>Full Digital Overhaul</h4>
+                <p>A complete rebuild covering brand alignment, copy strategy, conversion-focused design, and SEO foundations.</p>
+              </div>
+            </div>
+          </div>
+          <p class="services-footnote">Ongoing maintenance and content support available through monthly retainers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="image-break image-break-four" aria-hidden="true"></section>
+
+  <!-- ============================================================
+       WHY ARC CREATIVE
+  ============================================================ -->
+  <section class="section section-flush" id="why-arc-creative">
+    <div class="section-inner">
+      <div class="module-layout">
+        <div class="module-visual" aria-hidden="true"></div>
+        <div class="module-content">
+          <h2 class="section-h module-title">Why Arc Creative</h2>
+          <p class="section-p module-copy">
+            Experience without the agency bloat.
+            We bring something most creative agencies do not: real business and
+            sales experience. We understand what builds trust, drives conversions,
+            and helps businesses grow. That means we do more than make brands look
+            better — we make them work harder.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA / CONTACT
+  ============================================================ -->
+  <div class="cta-outer" id="contact">
+    <div class="section-inner">
+      <div class="cta-inner">
+        <h2 class="module-title">Your Website Should Work As Hard As <em>You Do.</em></h2>
+        <button class="btn-consult" id="consult-btn">Book a consultation</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="section-inner footer-inner">
+      <div class="footer-logo">Revive</div>
+      <p>© 2025 Revive Digital</p>
+      <p>hello@revive.co</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+
+</body>
+</html>
